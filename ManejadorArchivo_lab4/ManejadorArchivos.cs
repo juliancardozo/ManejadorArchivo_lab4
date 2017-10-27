@@ -20,7 +20,7 @@ namespace ManejadorArchivo_lab4
         {
 
             StreamWriter log = new StreamWriter("C:\\Users\\Mati\\Documents\\GitHub\\ManejadorArchivo_lab4\\ManejadorArchivo_lab4\\log.txt", true);
-            log.WriteLine("Intento escribir en "+nomArchivo);
+            log.WriteLine("[" + DateTime.Now + "] "+"Intento escribir en " +nomArchivo);
 
             if (!checkNombre(nomArchivo))
             {
@@ -36,18 +36,18 @@ namespace ManejadorArchivo_lab4
                     archivo.WriteLine(linea);
                 }
                 archivo.Close();
-                log.WriteLine("Logré escribir en "+nomArchivo);
+                log.WriteLine("[" + DateTime.Now + "] "+"Logré escribir en " +nomArchivo);
                 log.Close();
             } catch(DirectoryNotFoundException e)
             {
-                log.WriteLine("Ocurrio un error, no existe el directorio para "+nomArchivo);
+                log.WriteLine("[" + DateTime.Now + "] "+"Ocurrio un error, no existe el directorio para " +nomArchivo);
                 log.Close();
                 throw new DirectorioNoEncontradoException("El directorio no existe.");
             }
 
             catch (UnauthorizedAccessException e)
             {
-                log.WriteLine("Ocurrio un error, hay permisos para "+nomArchivo);
+                log.WriteLine("[" + DateTime.Now + "] "+"Ocurrio un error, hay permisos para " +nomArchivo);
                 log.Close();
                 throw new DirectorioNoAccesibleException("Ocurrio un error, es inaccesible");
 
@@ -57,14 +57,14 @@ namespace ManejadorArchivo_lab4
         public void Leer(String nomArchivo, String[] contenedor)
         {
             StreamWriter log = new StreamWriter("C:\\Users\\Mati\\Documents\\GitHub\\ManejadorArchivo_lab4\\ManejadorArchivo_lab4\\log.txt", true);
-            log.WriteLine("Intento leer " + nomArchivo);
+            log.WriteLine("[" + DateTime.Now + "] "+"Intento leer " + nomArchivo);
 
             try
             {
                 String[] lineas = System.IO.File.ReadAllLines(nomArchivo);
                 if (lineas.Count() > contenedor.Count())
                 {
-                    log.WriteLine("El archivo " + nomArchivo + " supera el largo del array dado");
+                    log.WriteLine("[" + DateTime.Now + "] "+"El archivo " + nomArchivo + " supera el largo del array dado");
                     log.Close();
                     throw new ArrayExcedidoLargoException("El archivo supera el largo del array");
                 }
@@ -75,20 +75,20 @@ namespace ManejadorArchivo_lab4
             }
             catch (FileNotFoundException e)
             {
-                log.WriteLine("No existe el archivo " + nomArchivo);
+                log.WriteLine("[" + DateTime.Now + "] "+"No existe el archivo " + nomArchivo);
                 log.Close();
                 throw new NoExisteArchivoException("El archivo no existe.");
             }
 
             catch (UnauthorizedAccessException e)
             {
-                log.WriteLine("Ocurrio un error, hay permisos para " + nomArchivo);
+                log.WriteLine("[" + DateTime.Now + "] "+"Ocurrio un error, hay permisos para " + nomArchivo);
                 log.Close();
                 throw new DirectorioNoAccesibleException("Ocurrio un error, es inaccesible");
 
             }catch (FileLoadException e)
             {
-                log.WriteLine("Archivo corrupto: " + nomArchivo);
+                log.WriteLine("[" + DateTime.Now + "] "+"Archivo corrupto: " + nomArchivo);
                 log.Close();
                 throw new ArchivoCorruptoException("Archivo corrupto");
 
@@ -100,7 +100,7 @@ namespace ManejadorArchivo_lab4
             ArrayList resultado = new ArrayList();
 
             StreamWriter log = new StreamWriter("C:\\Users\\Mati\\Documents\\GitHub\\ManejadorArchivo_lab4\\ManejadorArchivo_lab4\\log.txt", true);
-            log.WriteLine("Intento leer (arraylist) " + nomArchivo);
+            log.WriteLine("[" + DateTime.Now + "] "+"Intento leer (arraylist) " + nomArchivo);
 
             try
             {
@@ -114,21 +114,21 @@ namespace ManejadorArchivo_lab4
             }
             catch (FileNotFoundException e)
             {
-                log.WriteLine("No existe el archivo " + nomArchivo);
+                log.WriteLine("[" + DateTime.Now + "] "+"No existe el archivo " + nomArchivo);
                 log.Close();
                 throw new NoExisteArchivoException("El archivo no existe.");
             }
 
             catch (UnauthorizedAccessException e)
             {
-                log.WriteLine("Ocurrio un error, hay permisos para " + nomArchivo);
+                log.WriteLine("[" + DateTime.Now + "] "+"Ocurrio un error, hay permisos para " + nomArchivo);
                 log.Close();
                 throw new DirectorioNoAccesibleException("Ocurrio un error, es inaccesible");
 
             }
             catch (FileLoadException e)
             {
-                log.WriteLine("Archivo corrupto: " + nomArchivo);
+                log.WriteLine("[" + DateTime.Now + "] "+"Archivo corrupto: " + nomArchivo);
                 log.Close();
                 throw new ArchivoCorruptoException("Archivo corrupto");
 

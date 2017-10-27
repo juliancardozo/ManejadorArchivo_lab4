@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ArchivoCorruptoException.cs" />
     <Compile Include="ArrayExcedidoLargoException.cs" />
+    <Compile Include="CaracteresIvalidosExeption.cs" />
     <Compile Include="DirectorioNoAccesibleException.cs" />
     <Compile Include="DirectorioNoEncontradoException.cs" />
     <Compile Include="ManejadorArchivos.cs" />

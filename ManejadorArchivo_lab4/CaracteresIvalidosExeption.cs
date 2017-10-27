@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace ManejadorArchivo_lab4
 {
-    class CaracteresIvalidosExeption
+    class CaracteresIvalidosExeption:Exception
     {
+        public CaracteresIvalidosExeption()
+        {
+        }
+        public CaracteresIvalidosExeption(string message)
+            : base(message)
+        {
+        }
     }
 }
