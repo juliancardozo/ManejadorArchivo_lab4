@@ -35,17 +35,22 @@ namespace ManejadorArchivo_lab4
             }
             catch(DirectorioNoAccesibleException e)
             {
-                Console.WriteLine("*************** EXCEPCION DETECTADA ***************");
+                Console.WriteLine("******** EXCEPCION DETECTADA ********");
                 Console.WriteLine(e.ToString());
-            }catch(DirectorioNoEncontradoException e)
+                Console.WriteLine("******** FIN EXCEPCION ********");
+            }
+            catch(DirectorioNoEncontradoException e)
             {
-                Console.WriteLine("*************** EXCEPCION DETECTADA ***************");
+                Console.WriteLine("******** EXCEPCION DETECTADA ********");
                 Console.WriteLine(e.ToString());
+                Console.WriteLine("******** FIN EXCEPCION ********");
 
-            }catch(ArrayExcedidoLargoException e)
+            }
+            catch(ArrayExcedidoLargoException e)
             {
-                Console.WriteLine("*************** EXCEPCION DETECTADA ***************");
+                Console.WriteLine("******** EXCEPCION DETECTADA ********");
                 Console.WriteLine(e.ToString());
+                Console.WriteLine("******** FIN EXCEPCION ********");
 
             }
 
@@ -56,19 +61,21 @@ namespace ManejadorArchivo_lab4
 
             }catch(ArrayExcedidoLargoException e)
             {
-                Console.WriteLine("*************** EXCEPCION DETECTADA ***************");
+                Console.WriteLine("******** EXCEPCION DETECTADA ********");
                 Console.WriteLine(e.ToString());
+                Console.WriteLine("******** FIN EXCEPCION ********");
             }
             catch (DirectorioNoAccesibleException e)
             {
-                Console.WriteLine("*************** EXCEPCION DETECTADA ***************");
+                Console.WriteLine("******** EXCEPCION DETECTADA ********");
                 Console.WriteLine(e.ToString());
+                Console.WriteLine("******** FIN EXCEPCION ********");
             }
             catch (ArchivoCorruptoException e)
             {
-                Console.WriteLine("*************** EXCEPCION DETECTADA ***************");
+                Console.WriteLine("******** EXCEPCION DETECTADA ********");
                 Console.WriteLine(e.ToString());
-                Console.WriteLine("*************** FIN EXCEPCION ***************");
+                Console.WriteLine("******** FIN EXCEPCION ********");
             }
 
 
@@ -83,18 +90,21 @@ namespace ManejadorArchivo_lab4
             }
             catch (ArrayExcedidoLargoException e)
             {
-                Console.WriteLine("*************** EXCEPCION DETECTADA ***************");
+                Console.WriteLine("******** EXCEPCION DETECTADA ********");
                 Console.WriteLine(e.ToString());
+                Console.WriteLine("******** FIN EXCEPCION ********");
             }
             catch (DirectorioNoAccesibleException e)
             {
-                Console.WriteLine("*************** EXCEPCION DETECTADA ***************");
+                Console.WriteLine("******** EXCEPCION DETECTADA ********");
                 Console.WriteLine(e.ToString());
+                Console.WriteLine("******** FIN EXCEPCION ********");
             }
             catch (ArchivoCorruptoException e)
             {
-                Console.WriteLine("*************** EXCEPCION DETECTADA ***************");
+                Console.WriteLine("******** EXCEPCION DETECTADA ********");
                 Console.WriteLine(e.ToString());
+                Console.WriteLine("******** FIN EXCEPCION ********");
             }
 
 
