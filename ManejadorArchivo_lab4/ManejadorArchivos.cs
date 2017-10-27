@@ -12,32 +12,23 @@ namespace ManejadorArchivo_lab4
     public class ManejadorArchivos
     {
         // Cuenta de tres funciones:
-        //Escribir: que escribe los elementos (string) del arraylist en el archivo indicado.
-        //Leer: que lee las líneas del archivo indicado y los almacena en el array contenedor.
-        //Leer:Devuelve las siguientes líneas del archivo a partir del parámetro lineaNro
+        // Escribir: que escribe los elementos (string) del arraylist en el archivo indicado.
+        // Leer: que lee las líneas del archivo indicado y los almacena en el array contenedor.
+        // Leer: Devuelve las siguientes líneas del archivo a partir del parámetro lineaNro
+        // CheckNombre: Revisa el nombre del archivo, devuelve bool
         public void Escribir(String nomArchivo, ArrayList elementos)
         {
 
             StreamWriter log = new StreamWriter("C:\\Users\\Mati\\Documents\\GitHub\\ManejadorArchivo_lab4\\ManejadorArchivo_lab4\\log.txt", true);
             log.WriteLine("Intento escribir en "+nomArchivo);
 
+            if (!checkNombre(nomArchivo))
+            {
+                // Algo
+            }
+
             try
             {
-                ArrayList invalidos = new ArrayList();
-                invalidos.Add('&');
-                invalidos.Add('“');
-                invalidos.Add('|');
-                invalidos.Add('‘');
-                invalidos.Add('%');
-
-                foreach (Char n in nomArchivo)
-                {
-                    if (n.contains('d'))
-                    {
-
-                    }
-                }
-
 
                 StreamWriter archivo = new StreamWriter(nomArchivo, false);
                 foreach (String linea in elementos)
@@ -145,7 +136,27 @@ namespace ManejadorArchivo_lab4
 
         }
 
-        
-       
+        bool checkNombre(String nombre)
+        {
+
+
+            ArrayList invalidos = new ArrayList();
+            invalidos.Add('&');
+            invalidos.Add('“');
+            invalidos.Add('|');
+            invalidos.Add('‘');
+            invalidos.Add('%');
+
+            foreach (Char n in nomArchivo)
+            {
+                if (n.contains('d'))
+                {
+
+                }
+            }
+
+        }
+
+
     }
 }
