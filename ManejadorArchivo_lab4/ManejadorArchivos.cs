@@ -11,9 +11,10 @@ namespace ManejadorArchivo_lab4
 {
     public class ManejadorArchivos
     {
-        // Lee las líneas del archivo indicado y los almacena en el array contenedor.
-        // En caso de que el archivo contenga más líneas que el largo del array
-        // (contenedor), se deberá lanzar una excepción específica.
+        // Cuenta de tres funciones:
+        //Escribir: que escribe los elementos (string) del arraylist en el archivo indicado.
+        //Leer: que lee las líneas del archivo indicado y los almacena en el array contenedor.
+        //Leer:Devuelve las siguientes líneas del archivo a partir del parámetro lineaNro
         public void Escribir(String nomArchivo, ArrayList elementos)
         {
 
@@ -22,6 +23,22 @@ namespace ManejadorArchivo_lab4
 
             try
             {
+                ArrayList invalidos = new ArrayList();
+                invalidos.Add('&');
+                invalidos.Add('“');
+                invalidos.Add('|');
+                invalidos.Add('‘');
+                invalidos.Add('%');
+
+                foreach (Char n in nomArchivo)
+                {
+                    if (n.contains('d'))
+                    {
+
+                    }
+                }
+
+
                 StreamWriter archivo = new StreamWriter(nomArchivo, false);
                 foreach (String linea in elementos)
                 {
