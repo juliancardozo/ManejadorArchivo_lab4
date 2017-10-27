@@ -105,6 +105,15 @@ namespace ManejadorArchivo_lab4
             try
             {
                 String[] lineas = System.IO.File.ReadAllLines(nomArchivo);
+
+                if(lineas.Count() < lineaNro || lineaNro < 0)
+                {
+                    log.WriteLine("El archivo " + nomArchivo + " supera el largo del array dado");
+                    log.Close();
+                    throw new ArrayExcedidoLargoException("El archivo supera el largo del array");
+
+                }
+
                 for(int i = lineaNro; i < lineas.Count(); i++)
                 {
                     resultado.Add(lineas[i]);
