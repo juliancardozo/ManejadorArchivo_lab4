@@ -10,18 +10,18 @@ namespace ManejadorArchivo_lab4
     public class DirectorioNoEncontradoException : DirectoryNotFoundException
     {
 
-            public DirectorioNoEncontradoException()
-            {
-            }
+        public DirectorioNoEncontradoException()
+        {
+        }
 
-            public DirectorioNoEncontradoException(string message) : base(message)
-            {
+        public DirectorioNoEncontradoException(string message) : base(message)
+        {
             Console.Write("Hola Error DirectorioNoEncontrado.");
-            }
+        }
 
-            public DirectorioNoEncontradoException(string message, Exception innerException) : base(message, innerException)
-            {
-            }
-        
+        public DirectorioNoEncontradoException(string message, Exception innerException) : base(message, innerException)
+        {
+        }
+
     }
 }

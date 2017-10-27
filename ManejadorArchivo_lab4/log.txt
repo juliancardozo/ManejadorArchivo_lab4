@@ -1,0 +1,35 @@
+Intento escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Logré escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Intento escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Logré escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Intento escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Logré escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Intento escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Logré escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Intento escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Logré escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Intento escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Logré escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Intento escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Logré escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Intento escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Logré escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Intento escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Logré escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Intento escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Logré escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Intento escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejdadorArchivo_lab4\hola.txt
+Ocurrio un error, no existe el directorio para C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejdadorArchivo_lab4\hola.txt
+Intento escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Logré escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Intento escribir en C:\Windows\System32\drivers\etc\hosts
+Ocurrio un error, hay permisos para C:\Windows\System32\drivers\etc\hosts
+Intento leer C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+El archivo C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt supera el largo del array dado
+Intento escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Logré escribir en C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+Intento escribir en C:\Windows\System32\drivers\etc\hosts
+Ocurrio un error, hay permisos para C:\Windows\System32\drivers\etc\hosts
+Intento leer C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt
+El archivo C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt supera el largo del array dado
+Intento leer (arraylist) C:\Users\Mati\Documents\GitHub\ManejadorArchivo_lab4\ManejadorArchivo_lab4\hola.txt

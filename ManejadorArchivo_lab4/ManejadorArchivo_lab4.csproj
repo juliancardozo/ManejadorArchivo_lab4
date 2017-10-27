@@ -43,10 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArchivoCorruptoException.cs" />
+    <Compile Include="ArrayExcedidoLargoException.cs" />
+    <Compile Include="DirectorioNoAccesibleException.cs" />
     <Compile Include="DirectorioNoEncontradoException.cs" />
     <Compile Include="ManejadorArchivos.cs" />
+    <Compile Include="NoExisteArchivoException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RutaInvalidaException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
