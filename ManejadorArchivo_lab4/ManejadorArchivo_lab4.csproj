@@ -50,6 +50,7 @@
     <Compile Include="DirectorioNoEncontradoException.cs" />
     <Compile Include="ManejadorArchivos.cs" />
     <Compile Include="NoExisteArchivoException.cs" />
+    <Compile Include="NombreArchivoInvalido.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RutaInvalidaException.cs" />

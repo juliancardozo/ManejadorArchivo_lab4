@@ -22,15 +22,14 @@ namespace ManejadorArchivo_lab4
             array.Add("verano");
             array.Add("uruguay");
 
+            Console.WriteLine("Voy a escribir");
             try
             {
-
-                Console.WriteLine("Voy a escribir");
-                ma.Escribir("C:\\Users\\Mati\\Documents\\GitHub\\ManejadorArchivo_lab4\\ManejadorArchivo_lab4\\hola.txt", array);
+                ma.Escribir("C:\\Users\\Mati\\Documents\\GitHub\\ManejadorArchivo_lab4\\ManejadorArchivo_lab4\\h*_=3#|!o&&la.txt", array);
 
 
-                Console.WriteLine("Voy a escribir mal");
-                ma.Escribir("C:\\Windows\\System32\\drivers\\etc\\hosts", array);
+                // Console.WriteLine("Voy a escribir mal");
+                // ma.Escribir("C:\\Windows\\System32\\drivers\\etc\\hosts", array);
 
             }
             catch(DirectorioNoAccesibleException e)
@@ -53,7 +52,15 @@ namespace ManejadorArchivo_lab4
                 Console.WriteLine("******** FIN EXCEPCION ********");
 
             }
+            catch(NombreArchivoInvalido e)
+            {
+                Console.WriteLine("******** EXCEPCION DETECTADA ********");
+                Console.WriteLine(e.ToString());
+                Console.WriteLine("******** FIN EXCEPCION ********");
 
+            }
+
+           Console.WriteLine("Voy a leer");
             try
             {
                 string[] h = new String[1];
@@ -80,6 +87,7 @@ namespace ManejadorArchivo_lab4
 
 
 
+            Console.WriteLine("Voy a leer con list");
             try
             {
                 ArrayList l = ma.Leer("C:\\Users\\Mati\\Documents\\GitHub\\ManejadorArchivo_lab4\\ManejadorArchivo_lab4\\hola.txt", 3);

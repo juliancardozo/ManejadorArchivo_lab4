@@ -24,7 +24,9 @@ namespace ManejadorArchivo_lab4
 
             if (!checkNombre(nomArchivo))
             {
-                // Algo
+                log.WriteLine("Hay nombres de caracteres invalidos en " + nomArchivo);
+                log.Close();
+                throw new NombreArchivoInvalido("Hay nombres de caracteres invalidos.");
             }
 
             try
@@ -145,25 +147,10 @@ namespace ManejadorArchivo_lab4
 
         }
 
-        bool checkNombre(String nombre)
+        bool checkNombre(String nombreArchivo)
         {
-
-
-            ArrayList invalidos = new ArrayList();
-            invalidos.Add('&');
-            invalidos.Add('“');
-            invalidos.Add('|');
-            invalidos.Add('‘');
-            invalidos.Add('%');
-
-            foreach (Char n in nomArchivo)
-            {
-                if (n.contains('d'))
-                {
-
-                }
-            }
-
+            String nombre = nombreArchivo.Split('\\').Last();
+            return (nombre.IndexOfAny(Path.GetInvalidFileNameChars()) < 0);
         }
 
 
